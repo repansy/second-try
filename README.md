@@ -15,8 +15,9 @@
 >>  计算深度图
 >
 >>> SGBM匹配参数设置
->>> \
-    if left_image.ndim == 2:
+
+
+   ' if left_image.ndim == 2:
         img_channels = 1
     else:
         img_channels = 3
@@ -32,6 +33,6 @@
               'speckleWindowSize': 40,
               'speckleRange': 1,       # 规定一个视差变化的阈值，如果发现视差变化超出了这个阈值，则这个像素应该是一些无用的孤立像素
               'mode': cv2.STEREO_SGBM_MODE_SGBM_3WAY
-              }
->>> \
+              }'
+
 
